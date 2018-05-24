@@ -18,8 +18,11 @@ class SearchBar extends Component {
   }
 
   handleOnSubmit = (event) => {
-    event.preventDefault;
+    event.preventDefault();
     this.props.fetchCity(this.state.term)
+    this.setState({
+      term: ''
+    });
   }
 
   render() {
