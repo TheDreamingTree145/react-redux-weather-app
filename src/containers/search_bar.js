@@ -28,7 +28,6 @@ class SearchBar extends Component {
   render() {
     return (
       <div>
-        <h1>Hello World</h1>
         <form onSubmit={this.handleOnSubmit}>
           <input
             type="text"
